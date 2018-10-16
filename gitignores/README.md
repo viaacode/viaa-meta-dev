@@ -8,7 +8,7 @@ In alphabetical order:
 - Python.gitignore
 - VirtualEnv.gitignore
 
-The reference is, of course, [https://github.com/github/gitignore](https://github.com/github/gitignore].
+The reference is, of course, [https://github.com/github/gitignore](https://github.com/github/gitignore).
 
 ## Contributions
 
