@@ -8,7 +8,7 @@ This repository will host:
 
 - reference files,
 - templates: README, SETUP, CONTRIBUTING, ISSUE_TEMPLATE,...
-- gitignores for different environemnts or languages,
+- gitignores for different environments or languages,
 - Postman-JSON's,
 - guidance, documentation, best practices, conventions within VIAA,...
 - Docker file templates/starting points
@@ -30,3 +30,11 @@ This repository will host:
 **TODO**
 
 For the time being, pull repo en `cp` desired files to your local repo.
+
+## Gitignores
+
+- General
+- Python
+- Rails
+- Ruby
+- VirtualEnv
