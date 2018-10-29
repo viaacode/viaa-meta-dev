@@ -1,0 +1,71 @@
+# ------------------------------------------------------------------------------ #
+# Java defaults (https://github.com/github/gitignore/blob/master/Java.gitignore) #
+# ------------------------------------------------------------------------------ #
+# -----Package Files----- #
+    
+*.class
+*.jar
+*.war
+*.ear
+
+
+# ------------------------------------------------------------------------------------------- #
+# Eclipse-specific (https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore) #
+# ------------------------------------------------------------------------------------------- #
+
+.metadata
+.settings/
+.loadpath
+*.pydevproject
+*.tmp
+*.bak
+*.swp
+*~.nib
+bin/**
+tmp/**
+tmp/**/*
+
+# You may want to remove the sharp symbols here if you are using Maven
+.project
+.classpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+
+# --------------- #
+# Studio-specific #
+# --------------- #
+
+.studio/
+flows/
+target/
+**/*.mflow
+
+
+# ------------- #
+# Mule-specific #
+# ------------- #
+
+staging.properties
+production.properties
+local.properties
+catalog
+mappings
+src/main/app/mule-app.properties
+
+
+# -------------#
+# Mac-specific #
+# -------------#
+
+.DS_Store
