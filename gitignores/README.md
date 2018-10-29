@@ -5,6 +5,7 @@ Templates for .gitignore-files.
 In alphabetical order:
 
 - General.gitignore
+- Mule.gitignore
 - Python.gitignore
 - VirtualEnv.gitignore
 
