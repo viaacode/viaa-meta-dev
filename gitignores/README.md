@@ -7,6 +7,7 @@ In alphabetical order:
 - General.gitignore
 - Java.gitignore
 - JetBrains.gitignore
+- Maven.gitignore
 - Mule.gitignore
 - Python.gitignore
 - VirtualEnv.gitignore
