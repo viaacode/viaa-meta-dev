@@ -21,7 +21,7 @@ A suggested approach is to run builds and tests on ALL branches, even feature br
 
 The Jenkinsfile can be (and ideally is) part of the SCM repository. The example below is a simple Jenkinsfile to build a java project and deploy it to a Maven repository.
 
-```json
+```
 pipeline {
     agent {
       node {
@@ -116,4 +116,4 @@ When the managed file is set up with [a set of credentials belonging to a Server
 
 ## Configuration screenshot
 
-![Example](https://imgur.com/Hzkrtz0 "Example Jenkins configuration")
+![Example](https://i.imgur.com/Hzkrtz0.png "Example Jenkins configuration")

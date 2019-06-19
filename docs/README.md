@@ -1,1 +1,3 @@
-Starting point is: (index.md)
+# VIAA developer documenation
+
+See:[Index](index.md)
