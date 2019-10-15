@@ -20,6 +20,8 @@
   + Guidelines
   + SCM: Git and git workflow
   + Testing
+  + Configuring development environment
+    + [Configuring pip](configuring-pip.md)
 + Deployment
   + Introduction: CI/CD with Jenkins
   + [Setting up a Jenkins pipeline](setting-up-a-jenkins-pipeline.md)
