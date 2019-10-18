@@ -1,4 +1,4 @@
-# VIAA developer documenation
+# VIAA developer documentation
 
 ## Contents
 
