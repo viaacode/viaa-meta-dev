@@ -10,6 +10,7 @@
 # Custom additions, either project- or VIAA-specific #
 # -------------------------------------------------- #
 
+mule-app.sh
 
 # ------------------------------------------------------------------------------ #
 # Java defaults (https://github.com/github/gitignore/blob/master/Java.gitignore) #
