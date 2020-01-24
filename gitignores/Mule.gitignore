@@ -64,6 +64,10 @@ tmp/**/*
 flows/
 target/
 **/*.mflow
+# Generated documentation
+assets/
+img/
+index.html
 
 
 # ------------- #
@@ -73,6 +77,9 @@ target/
 staging.properties
 production.properties
 local.properties
+staging.y*ml
+production.y*ml
+local.y*ml
 catalog
 mappings
 src/main/app/mule-app.properties
