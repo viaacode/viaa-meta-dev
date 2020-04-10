@@ -8,7 +8,9 @@ This repository will host:
 
 - reference files,
 - [templates](./templates): README, SETUP, CONTRIBUTING, ISSUE_TEMPLATE,...
-- [gitignores](./gitignores) for different environments and languages,
+- [gitignores](./gitignores): for different environments and languages,
+- [snippets](./snippets): A collection of useful code-snippets in different
+  languages. No need to re-invent the wheel.
 - Postman-JSON's,
 - guidance, documentation, best practices, conventions within VIAA,...
 - Docker file templates/starting points,
