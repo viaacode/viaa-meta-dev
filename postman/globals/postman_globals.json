@@ -1,0 +1,37 @@
+{
+	"id": "94f33e97-f61f-4e70-8b02-f19c148b9ee8",
+	"values": [
+		{
+			"key": "json_v1",
+			"value": "application/json",
+			"type": "text",
+			"description": "Standard JSON. MediaHaven's old format.",
+			"enabled": true
+		},
+		{
+			"key": "json_v2",
+			"value": "application/vnd.mediahaven.v2+json",
+			"type": "text",
+			"description": "MediaHaven's new JSON format.",
+			"enabled": true
+		},
+		{
+			"key": "xml_v1",
+			"value": "application/xml",
+			"type": "text",
+			"description": "Standard XML. MediaHaven's old format.",
+			"enabled": true
+		},
+		{
+			"key": "xml_v2",
+			"value": "application/vnd.mediahaven.v2+xml",
+			"type": "text",
+			"description": "MediaHaven's new XML format.",
+			"enabled": true
+		}
+	],
+	"name": "Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2020-04-22T14:05:30.708Z",
+	"_postman_exported_using": "Postman/7.22.1"
+}
