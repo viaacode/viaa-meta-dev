@@ -11,7 +11,7 @@ This repository will host:
 - [gitignores](./gitignores): for different environments and languages,
 - [snippets](./snippets): A collection of useful code-snippets in different
   languages. No need to re-invent the wheel.
-- Postman-JSON's,
+- [Postman-JSON's](./postman),
 - guidance, documentation, best practices, conventions within VIAA,...
 - Docker file templates/starting points,
 - ...
