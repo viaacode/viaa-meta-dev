@@ -14,7 +14,7 @@
 APPLICATION=""
 HOST=""
 USER="mule"
-TARGET_TMP="/tmp"
+TARGET_TMP="/home/mule/repository"
 APPS_FOLDER=""
 
 ##### Functions
@@ -93,10 +93,10 @@ show_latest_artifact()
     printf "Latest artifact is: %s.\n" $latest_artifact
 }
 
-move_artifact_to_apps()
+copy_artifact_to_apps()
 {
-    printf "Moving artifact from /tmp to %s.\n" $APPS_FOLDER
-    ssh $USER@$HOST "mv $TARGET_TMP/$latest_artifact_filename $APPS_FOLDER"
+    printf "Copying artifact from %s to %s.\n" $TARGET_TMP $APPS_FOLDER
+    ssh $USER@$HOST "cp $TARGET_TMP/$latest_artifact_filename $APPS_FOLDER"
 }
 
 get_status()
@@ -138,7 +138,7 @@ deploy()
         printf "Deploying %s to %s.\n" $latest_artifact_filename $HOST
         scp $latest_artifact $USER@$HOST:$TARGET_TMP
         #ssh $USER@$HOST "ls $TARGET_TMP/$APPLICATION*"
-        move_artifact_to_apps
+        copy_artifact_to_apps
     fi
 }   # end of deploy
 
