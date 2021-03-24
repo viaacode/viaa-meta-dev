@@ -21,7 +21,7 @@ WHERE
     idx_scan = 0
     AND indisunique is false;
 
--- Same as above but including size in bytes
+-- Same as above but also include size in bytes
 -- and n° scans (just to be sure)
 SELECT
     indexrelid :: regclass AS index,
@@ -42,7 +42,7 @@ ORDER BY
     size desc;
 
 -- Find duplicate indexes
--- Look for true duplicate indexes: same table, same columns, same column order.
+-- Look for true duplicate indexes: same table, same columns, same column order
 SELECT
     a.indrelid::regclass,
     a.indexrelid::regclass,
@@ -76,7 +76,7 @@ LIMIT
     20;
 
 -- Find table / toast / index sizes for all tables in one or more schema's,
--- ordered by table / index size.
+-- ordered by total size.
 -- Use LIMIT to show only the biggliest.
 SELECT
     *,
@@ -111,21 +111,6 @@ FROM
         ORDER BY
             total_bytes DESC
     ) a;
-
--- When did the cleaner came by?
-SELECT
-    relname,
-    last_vacuum,
-    last_autovacuum,
-    last_analyze,
-    last_autoanalyze
-FROM
-    pg_stat_all_tables
-WHERE
-    schemaname IN ('shared', 'app')
-    -- Don't forget to select the relevant schema's
-ORDER BY
-    last_vacuum DESC;
 
 -- Find the fat lazy ones that are hogging your disk space
 -- You get a complete list of all tables,
@@ -177,3 +162,18 @@ WHERE
 ORDER BY
     1,
     2;
+
+-- When did the cleaner came by?
+SELECT
+    relname,
+    last_vacuum,
+    last_autovacuum,
+    last_analyze,
+    last_autoanalyze
+FROM
+    pg_stat_all_tables
+WHERE
+    schemaname IN ('shared', 'app')
+    -- Don't forget to select the relevant schema's
+ORDER BY
+    last_vacuum DESC;
